@@ -1,0 +1,19 @@
+.example-full-width {
+    width: 80%;
+    margin-left: 10%;
+    
+  }
+
+  .container{
+    width: 70%;
+    background: linear-gradient(to right, #756cfa, #904cff);
+    
+  }
+
+  .center-button {
+    margin-left: 400px;
+    
+}
+.container-operaciones{
+  margin-left: 30%;
+}

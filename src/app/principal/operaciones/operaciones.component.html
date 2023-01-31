@@ -1,0 +1,26 @@
+<section class="container mt-4 border rounded shadow-lg" >
+    <form class="container-sm p-4 w-50 mt-4 ">
+      <h1 class="text-white text-center">OPERACIONES MATEMATICAS 👩🏻‍💻</h1>
+      <mat-form-field class="example-full-width">
+        <mat-label >num 1</mat-label>
+        <input [(ngModel)]="num1"name="string" type="number" matInput placeholder="0" value="">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>num 2</mat-label>
+        <input [(ngModel)]="num2" name="string" type="number" matInput placeholder="0" value="">
+      </mat-form-field>
+    </form>
+    <section class=" container-operaciones -p-4 w-50 mt-4">
+      <mat-slide-toggle [(ngModel)]="suma" class="m-2">Suma</mat-slide-toggle>
+      <mat-slide-toggle [(ngModel)]="resta" class="m-2">Resta</mat-slide-toggle>
+      <mat-slide-toggle [(ngModel)]="multi" class="m-2">Multiplicacion</mat-slide-toggle>
+      <mat-slide-toggle [(ngModel)]="divi" class="m-2">Dvivision</mat-slide-toggle>
+    </section>
+    <section class="center-button  p-4 w-50 mt-4">
+      <button mat-raised-button color="accent" class="m-2" (click)="operacion()">Calcular</button>
+      <p class="text-light m-3">{{resultado}}</p>
+      <p class="text-light m-3">{{resultado_resta}}</p>
+      <p class="text-light m-3">{{resultado_mul}}</p>
+      <p class="text-light m-3">{{resultado_divi}}</p>
+    </section>
+  </section>
